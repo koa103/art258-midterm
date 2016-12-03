@@ -1,12 +1,136 @@
 * {
   margin: 0 auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#first {
-  color: red;
-  background-color: yellow;
+h1.logo {
+  font-size: 60px;
+  color: #fff;
+  font-family: helvetica;
+  padding-left: 0.2em;
 }
 
-#second {
+.container {
+  width: 100%;
+}
+
+header.header {
+  border: 1px red solid;
+  background-color: #aaa;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav {
+  border: 1px red solid;
+  width: 500px;
+  display: box;
+  display: inline;
+}
+
+#nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav ul li {
+  background-color: #999;
+  color: #fff;
+  padding: 10px;
+  height: 30px;
+  list-style-type: none;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero img {
+  border: 1px red solid;
+  width: 100%;
+}
+
+.container {
+  border: 1px red solid;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  text-align: center;
+  font-family: helvetica;
+  font-size: 3em;
+}
+
+#greet {
+  width: 50%;
+  border: 1px red solid;
+  justify-content: center;
+}
+
+.caption-container {
+  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+  display: flex;
+  height: 300px;
+  vertical-align: top;
+  padding: 0 0 0 5px;
+}
+
+.caption {
+  display: flex;
+  border: 1px blue solid;
   background-color: pink;
+  width: 100%;  /* Or whatever */
+  height: 100%; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+.caption p {
+  height: 2em;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.rightmag {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.shoe img {
+  border: 1px blue solid;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.footer {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Or whatever */
+  justify-content: center;
+}
+
+.footer p {
+  width: 100%;  /* Or whatever */
+  height: 25%; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+.footer img {
+  width: 20%;  /* Or whatever */
+  height: 25%; /* Or whatever */
+  margin: auto;  /* Magic! */
 }
