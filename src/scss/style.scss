@@ -1,3 +1,4 @@
+
 * {
   margin: 0 auto;
   -moz-box-sizing: border-box;
@@ -12,15 +13,28 @@ h1.logo {
   padding-left: 0.2em;
 }
 
-.container {
+header.header {
+  border: 1px red solid;
+  background-color: red;
+  height: 100px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1.logo {
+  font-size: 60px;
+  color: #fff;
+  font-family: helvetica;
+  padding-left: 0.2em;
 }
 
 header.header {
   border: 1px red solid;
   background-color: #aaa;
   height: 100px;
-  width: 100%;
+  width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +53,7 @@ header.header {
 }
 
 #nav ul li {
+  border: 1px black solid;
   background-color: #999;
   color: #fff;
   padding: 10px;
@@ -47,6 +62,7 @@ header.header {
 }
 
 #nav ul li a {
+  border: 1px red solid;
   text-decoration: none;
   color: #fff;
 }
@@ -65,7 +81,7 @@ header.header {
 p {
   text-align: center;
   font-family: helvetica;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 #greet {
@@ -74,32 +90,61 @@ p {
   justify-content: center;
 }
 
-.caption-container {
-  align-items: center;
-  flex-direction: column;
-  justify-content: left;
-  display: flex;
-  height: 300px;
-  vertical-align: top;
-  padding: 0 0 0 5px;
+#blackfriday {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
-.caption {
-  display: flex;
+#blackfriday img {
+  height: 2%;
+  width: 100%;
+  z-index: 100;
+}
+
+#blackfriday .caption-container {
+  position: absolute;
+  left: 2%;
+  bottom: -20%;
+  justify-content: left;
+  height: 300px;
+  padding: 0;
+}
+
+.caption .sml_fnt {
+  padding: 1em 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.caption .bold {
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+#blackfriday .caption {
   border: 1px blue solid;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
   background-color: pink;
   width: 100%;  /* Or whatever */
   height: 100%; /* Or whatever */
-  margin: auto;  /* Magic! */
+  margin: auto;/* Magic! */
 }
 
 .caption p {
-  height: 2em;
+  border: 1px green solid;
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0;
+  font-size: 2em;
+  color: #000;
+  font-weight: bold;
 }
 
 .rightmag {
+  border: 1px blue solid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -107,15 +152,24 @@ p {
   height: auto;
 }
 
+.shoe {
+  border: 1px green solid;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: left;
+}
+
 .shoe img {
   border: 1px blue solid;
-  height: 100%;
   width: 100%;
+  height: auto;
   padding-bottom: 0;
   margin: 0;
 }
 
 .footer {
+  border: 1px red solid;
   background-color: #555;
   display: flex;
   flex-direction: column;
@@ -124,6 +178,7 @@ p {
 }
 
 .footer p {
+  border: 1px red solid;
   width: 100%;  /* Or whatever */
   height: 25%; /* Or whatever */
   margin: auto;  /* Magic! */
@@ -134,3 +189,8 @@ p {
   height: 25%; /* Or whatever */
   margin: auto;  /* Magic! */
 }
+
+/* #greet {
+  width: 500px;
+  border: 1px red solid;
+} */
